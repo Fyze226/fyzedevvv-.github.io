@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FyzeDev | Разработчик и создатель контента</title>
+    
+    <!-- Подключаем шрифты и иконки -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Подключаем наш CSS файл -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Фоновые элементы -->
+<div class="animated-bg"></div>
+<div class="gradient-orb orb1"></div>
+<div class="gradient-orb orb2"></div>
+<div class="gradient-orb orb3"></div>
+<canvas id="particleCanvas"></canvas>
+
+<!-- Кнопка переключения темы -->
+<div class="theme-toggle" id="themeToggle">
+    <i class="fas fa-sun"></i> 
+    <span>Светлая тема</span>
+</div>
+
+<main class="container">
+    <div class="hero">
+        <div class="badge">
+            <i class="fas fa-cube"></i> full-stack · создатель контента
+        </div>
+        
+        <div class="code-block">
+            <span style="color:#c792ea;">fyzedev</span><span style="color:#ff5874;">()</span> { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#82aaff;">printf</span><span style="color:#f6f8fa;">(</span><span style="color:#c3e88d;">"анимации + код + продукт"</span><span style="color:#f6f8fa;">);</span><br>
+            }
+        </div>
+        
+        <h1>FyzeDev</h1>
+        
+        <div class="subhead">
+            <i class="fas fa-laptop-code"></i> Software developer · YouTube creator
+        </div>
+        
+        <div class="description">
+            Специализируюсь на создании Telegram ботов, интерактивных сайтов и сложной автоматизации. 
+            Превращаю идеи в надёжные цифровые продукты.
+        </div>
+        
+        <div class="social-grid">
+            <a href="https://t.me/fyzedev" target="_blank" class="social-btn">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="https://www.youtube.com/@fyzedev1000-7" target="_blank" class="social-btn">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <div class="social-btn" id="contactBtn">
+                <i class="fas fa-paper-plane"></i> Связаться
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <div class="section-title">
+            <i class="fas fa-chart-line"></i> 
+            <span>Ключевые навыки</span>
+        </div>
+        
+        <div class="skills-grid">
+            <!-- Карточка 1 -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i> 
+                    <i class="fab fa-react" style="margin-left: 6px;"></i>
+                </div>
+                <h3>Web Design & Development</h3>
+                <p>Создание сайтов с интерактивными анимациями, адаптивным дизайном, JavaScript-фреймворками и современными веб-стандартами.</p>
+                <div class="tech-strip">
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">GSAP</span>
+                    <span class="tech-item">Three.js</span>
+                </div>
+            </div>
+            
+            <!-- Карточка 2 -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h3>UX/UI Design</h3>
+                <p>Проектирование интерфейсов с фокусом на удобство, визуальную привлекательность и пользовательский опыт. Figma, прототипирование.</p>
+                <div class="tech-strip">
+                    <span class="tech-item">Figma</span>
+                    <span class="tech-item">Адаптив</span>
+                    <span class="tech-item">Анимация UI</span>
+                </div>
+            </div>
+            
+            <!-- Карточка 3 -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python Development</h3>
+                <p>Разработка Telegram ботов на aiogram, работа с JSON, SQLite, API, системы логирования и создание автоматизированных решений.</p>
+                <div class="tech-strip">
+                    <span class="tech-item">Aiogram</span>
+                    <span class="tech-item">Docker</span>
+                    <span class="tech-item">REST API</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="extra-section">
+        <div class="section-title">
+            <i class="fas fa-rocket"></i> 
+            <span>Что ещё я создаю</span>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <i class="fas fa-robot"></i> Telegram-экосистемы
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-chart-line"></i> Дашборды & аналитика
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-shield-alt"></i> Безопасность и авторизация
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-cloud"></i> CI/CD, деплой
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 FyzeDev — создаю продукты с вниманием к деталям и анимациям.</p>
+        <p><i class="fas fa-sync-alt"></i> фон с частицами + плавающие сферы</p>
+    </footer>
+</main>
+
+<!-- Подключаем JavaScript файл -->
+<script src="js/main.js"></script>
+</body>
+</html>
